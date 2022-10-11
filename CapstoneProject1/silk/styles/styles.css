@@ -84,6 +84,7 @@
 .text {
     position: relative;
     /* z-index: 10; */
+   
 }
 
 .email {
@@ -114,7 +115,7 @@
 .menu ul li a {
     text-decoration: none;
     font-size: 24px;
-    color: black;
+    color: white;
 }
 
 .menu ul li a:hover {
@@ -230,7 +231,7 @@ a {
   background-color: black;
   }
 
-  h4,
+   h4,
   ul,
   span {
     padding: 0;
@@ -264,7 +265,7 @@ a {
     height: 10px;
     border-radius: 50px;
     display: inline-block;
-  }
+  } 
   .red {
     background-color: red;
   }
@@ -327,7 +328,7 @@ a {
       color:white;
       font-size: 1.2rem;
       grid-column: 1 / -1 ;
-      justify-self: center;
+      justify-self: right;
       text-align: center;
+      
   }
-  
