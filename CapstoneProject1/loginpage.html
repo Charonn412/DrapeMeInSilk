@@ -24,9 +24,15 @@
 
                 <input type="email" id="email"
                    pattern=".+@globex\.com" size="30" required>
-                    <a href="mailto:email@address.com">
-                        <button type="button" class="btn btn-dark">Enter</button>
-                    </a>
+                    <a href="mailto:email@address.com"></a>
+
+                    <button id="myButton" class="float-left submit-button" >Enter</button>
+
+                    <script type="text/javascript">
+                        document.getElementById("myButton").onclick = function () {
+                            location.href = "http://127.0.0.1:5500/Thankyoupage.html";
+                        };
+                    </script>
         </div>
 
       </section>
