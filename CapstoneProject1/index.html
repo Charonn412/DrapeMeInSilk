@@ -1,43 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>shopdrapemeinsilk.com</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <style>
-    .video-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%; 
-  overflow: hidden;
-}
-.video-container video {
-  /* Make video to at least 100% wide and tall */
-  min-width: 100%; 
-  min-height: 20%; 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shopdrapemeinsilk</title>
+  <link rel="stylesheet" type="text/css" href="silk/styles/styles.css"/>
+</head>
+<body>
+  <div style="width: 100vw">
+  <section class="showcase active">
+    <header>
+      <h2 class="logo">DrapeMeInSilk</h2>
+      
+    </header>
 
-  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-  width: auto;
-  height: auto;
+      <video src="silk/images/Girl In White Robe.mp4" muted loop autoplay></video>
 
-  /* Center the video */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-  </style>
-  </head>
-  <body>
-    
-    <div class="video-container">
-      <video controls autoplay="true">
-        <source src="silk/images/Girl In White Robe.mp4" type="video/mp4" />
-      </video>
+    <div class="overlay"></div>
+    <div class="toggle active"></div>
+    <div class="text">
+      <h2>"True self care is draping yourself in the finest of silk items"</h2>
+      <a href="shoppingpage.html">Explore</a>
     </div>
+      
+    <ul class="social">
+      <li><img src="instagram.png"></li>
+    </ul>
+  </section>
 
-  </body>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () =>{
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
+</body>
 </html>
