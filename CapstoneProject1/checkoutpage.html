@@ -5,8 +5,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shopdrapemeinsilk</title>
+    
+    <style>
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ /* .small-container cart-page {
+    margin: 8px auto;
+    
+  } */
+
+  table{
+    width: 2000px;
+    border-collapse: collapse;
+    font-size: large;
+  }
+
+  th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: rgb(203, 19, 19);
+    font-weight: normal;
+  }
+
+  td{
+    padding: 10px 5px;
+
+  }
+
+  td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  td img{
+    width: 200px;
+    height:200px;
+    margin-right: 0px;
+  }
+    </style>
 </head>
 <body>
-    
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="silk/images/Silk-Logo.jpg" width="100px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="regpage.html">Register</a></li>
+                <li><a href="loginpage.html">Login</a></li>
+            </ul>
+        </nav>
+       </div>
+
+
+
+    <div class="small container cart-page">
+
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info"></div>
+                <img src="silk/styles/blackrobe.webp" >
+                <div>
+                    <p>Black Robe</p>
+                    <small>Price: $50.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+        </td>
+        <td><input type="number" value="1"><td>
+         <td>$50.00</td>   
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info"></div>
+                <img src="silk/styles/whiterobe.webp" >
+                <div>
+                    <p>White Robe</p>
+                    <small>Price: $50.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+        </td>
+        <td><input type="number" value="1"><td>
+         <td>$50.00</td>   
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info"></div>
+                <img src="silk/styles/redbonnet.jpeg" >
+                <div>
+                    <p>Red Bonnet</p>
+                    <small>Price: $25.00</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+        </td>
+        <td><input type="number" value="1"><td>
+         <td>$50.00</td>   
+    </tr>
+</table>
+
+</div>
 </body>
 </html>
