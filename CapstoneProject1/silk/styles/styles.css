@@ -7,6 +7,20 @@
     font-family: 'Playfair';
 }
 
+h2 {
+    margin-left: 97%;
+}
+
+h3 {
+    margin-right: 30%;
+    position: relative;
+    
+}
+/* doesn't work */
+/* .social {
+    background-color: transparent;
+} */
+
 .showcase {
     position: absolute;
     width: 100%;
@@ -85,6 +99,10 @@
     position: relative;
     /* z-index: 10; */
    
+}
+
+.text a {
+    text-decoration: underline;
 }
 
 .email {
