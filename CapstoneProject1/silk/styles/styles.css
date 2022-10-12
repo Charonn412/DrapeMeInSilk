@@ -249,6 +249,36 @@ a {
   background-color: black;
   }
 
+
+.tieImg {
+background-image: url(redtie.jpeg);
+background-color: black;
+}
+
+
+.eyemaskImg {
+background-image: url(blackeyemask.webp);
+background-color: black;
+}
+
+
+.longsetImg {
+background-image: url(redsleepset.jpeg);
+background-color: black;
+}
+
+
+.shortsetImg{
+background-image: url(shortblacksleepset.jpeg);
+background-color: black;
+}
+
+
+.scarfImg {
+background-image: url(whitesilkscarf.webp);
+background-color: black;
+}
+
    h4,
   ul,
   span {

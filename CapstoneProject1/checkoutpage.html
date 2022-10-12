@@ -67,6 +67,7 @@ a {
     height:200px;
     margin-right: 0px;
   }
+
     </style>
 </head>
 <body>
@@ -85,6 +86,7 @@ a {
        </div>
 
 
+       
 
     <div class="small container cart-page">
 
@@ -130,16 +132,55 @@ a {
                 <img src="silk/styles/redbonnet.jpeg" >
                 <div>
                     <p>Red Bonnet</p>
-                    <small>Price: $25.00</small>
+                    <small>Price: $50.00</small>
                     <br>
                     <a href="">Remove</a>
                 </div>
             </div>
         </td>
         <td><input type="number" value="1"><td>
-         <td>$50.00</td>   
+         <td>$25.00</td>   
     </tr>
 </table>
+
+<div class="panel panel-default bootstrap-basic">
+    <form class="panel-body" action="your-form-handling-page" method="POST" id="checkout-form" onsubmit="return do_when_clicking_submit_button()">
+      <div class="row">
+         <div class="form-group col-md-12">
+            <label for="cardholder-name">Name on Card</label>
+            <input type="text" class="form-control" id="cardholder-name" placeholder="Full Name">
+            <span class="helper-text"></span>
+         </div>
+         <!--Field for CC number-->
+         <div class="form-group col-md-12">
+            <label for="card-number">Card Number</label>
+            <div class="input-group">
+              <div class="form-control" id="card-number" data-bluesnap="ccn"></div>
+              <input type="text" name="UserName" size=35 maxlength=50 value="">
+           </div>
+           <span class="helper-text" id="card-help"></span>
+         </div>
+               <!--ield for CC EXP-->
+         <div class="form-group col-xs-7">
+            <label for="exp-date">Exp. Date</label>
+            <input type="text" name="UserName" size=10 maxlength=50 value="">
+            <div class="form-control" id="exp-date" data-bluesnap="exp"></div>
+            <span class="helper-text"></span>
+         </div>
+              <!--Field for CC CVV-->
+              <div class="form-group col-xs-5">
+           <label for="cvv">Security Code</label>
+           <input type="text" name="UserName" size=5 maxlength=50 value="">
+           <div class="form-control" id="cvv" data-bluesnap="cvv"></div>
+           <span class="helper-text"></span>
+        </div>
+      </div>	
+  
+          <button class="btn btn-success btn-lg col-xs-6 col-xs-offset-3" type="submit" id="submit-button">Pay Now</button>
+              
+          </form>
+    
+  </div>
 
 </div>
 </body>
