@@ -38,13 +38,13 @@ a {
   } */
 
   table{
-    width: 1500px;
+    width: 1700px;
     border-collapse: collapse;
     font-size: large;
   }
 
   th{
-    text-align: left;
+    text-align: center;
     padding: 5px;
     color: white;
     background: rgb(203, 19, 19);
@@ -53,6 +53,7 @@ a {
 
   td{
     padding: 10px 5px;
+    text-align: center;
 
   }
 
@@ -67,6 +68,15 @@ a {
     height:200px;
     margin-right: 0px;
   }
+
+  .panel{
+    float: right;
+    position: relative; top: -555px;
+    padding-right: 200px;
+    font-size: x-large;
+  }
+
+
 
     </style>
 </head>
@@ -132,7 +142,7 @@ a {
                 <img src="silk/styles/redbonnet.jpeg" >
                 <div>
                     <p>Red Bonnet</p>
-                    <small>Price: $50.00</small>
+                    <small>Price: $25.00</small>
                     <br>
                     <a href="">Remove</a>
                 </div>
@@ -143,43 +153,40 @@ a {
     </tr>
 </table>
 
-<div class="panel panel-default bootstrap-basic">
-    <form class="panel-body" action="your-form-handling-page" method="POST" id="checkout-form" onsubmit="return do_when_clicking_submit_button()">
+<div class="panel ">
+    <form class="panel-body"  id="checkout-form" >
       <div class="row">
-         <div class="form-group col-md-12">
+         <div class="form-group">
+            <span class="checkout">
             <label for="cardholder-name">Name on Card</label>
             <input type="text" class="form-control" id="cardholder-name" placeholder="Full Name">
-            <span class="helper-text"></span>
          </div>
          <!--Field for CC number-->
          <div class="form-group col-md-12">
             <label for="card-number">Card Number</label>
-            <div class="input-group">
-              <div class="form-control" id="card-number" data-bluesnap="ccn"></div>
-              <input type="text" name="UserName" size=35 maxlength=50 value="">
-           </div>
-           <span class="helper-text" id="card-help"></span>
-         </div>
+                <div class="input-group">
+                <div class="form-control" id="card-number" ></div>
+                    <input type="text" name="UserName" size=35 maxlength=50 value="">
+                </div>
+                </div>
                <!--Field for CC EXP-->
-         <div class="form-group col-xs-7">
+         <div class="form-group">
             <label for="exp-date">Exp. Date</label>
             <input type="text" name="UserName" size=10 maxlength=50 value="">
-            <div class="form-control" id="exp-date" data-bluesnap="exp"></div>
             <span class="helper-text"></span>
          </div>
               <!--Field for CC CVV-->
               <div class="form-group col-xs-5">
            <label for="cvv">Security Code</label>
            <input type="text" name="UserName" size=5 maxlength=50 value="">
-           <div class="form-control" id="cvv" data-bluesnap="cvv"></div>
-           <span class="helper-text"></span>
+           <div class="form-control" id="cvv"></div>
         </div>
-      </div>	
+        </div>	
   
-          <button class="btn btn-success btn-lg col-xs-6 col-xs-offset-3" type="submit" id="submit-button">Pay Now</button>
+          <button class= btn type="submit" id="submit-button">Pay Now</button>
               
           </form>
-    
+        </span>
   </div>
 
 </div>
